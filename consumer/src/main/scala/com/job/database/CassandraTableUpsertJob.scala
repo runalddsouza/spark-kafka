@@ -27,7 +27,7 @@ class CassandraTableUpsertJob(configuration: SparkConfiguration) extends TableUp
       .option("kafka.sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required"
         + s"\nusername='${configuration.kafka.userName}'"
         + s"\npassword='${configuration.kafka.password}';")
-      .option("subscribe", s"${configuration.kafka.topic}")
+      .option("subscribe", configuration.kafka.topic)
       .option("startingOffsets", "latest")
       .option("failOnDataLoss", "false")
       .load()

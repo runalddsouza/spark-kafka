@@ -15,6 +15,7 @@
     <modules>
         <module>consumer</module>
         <module>shared</module>
+        <module>producer</module>
     </modules>
     <properties>
         <scala.version>2.12.8</scala.version>
