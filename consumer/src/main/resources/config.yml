@@ -1,0 +1,15 @@
+master: local[*]
+kafka:
+  server: 192.168.0.152:9092
+  topic: electronics
+  username: user
+  password: MAvRoJKdU8nT
+  checkpointLocation: /tmp/kafka/checkpoint
+cassandra:
+  host: 192.168.0.151
+  port: 9042
+  keyspace: products
+  username: cassandra
+  password: cassandra
+  datacenter: datacenter1
+  table: electronics
