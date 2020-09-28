@@ -13,7 +13,7 @@ object Configuration {
 }
 
 case class SparkConfiguration(@JsonProperty("master") master: String, @JsonProperty("kafka") kafka: Kafka,
-                              @JsonProperty("cassandra") cassandra: Cassandra)
+                              @JsonProperty("cassandra") cassandra: Cassandra, @JsonProperty("dataSource") dataSource: String)
 
 case class Kafka(@JsonProperty("server") server: String, @JsonProperty("username") userName: String,
                  @JsonProperty("password") password: String, @JsonProperty("topic") topic: String,

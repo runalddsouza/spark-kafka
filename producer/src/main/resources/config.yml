@@ -1,0 +1,7 @@
+master: local[*]
+dataSource: producer/src/main/resources/data.json
+kafka:
+  server: 192.168.0.152:9092
+  topic: electronics
+  username: user
+  password: MAvRoJKdU8nT

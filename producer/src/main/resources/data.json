@@ -1,0 +1,97 @@
+[
+  {
+    "code": "IN2025",
+    "brand": "OnePlus",
+    "details": {
+      "Chipset": "Qualcomm SM8250 Snapdragon 865 (7 nm+)",
+      "OS": "Android 10, OxygenOS 10.0",
+      "display": "6.78 inch Fluid AMOLED capacitive touchscreen, 1B colors",
+      "memory": "128GB 8GB RAM, 256GB 12GB RAM",
+      "releaseDate": "April 2020",
+      "resolution": "1440 x 3168",
+      "displayRefreshRate": "120 Hz"
+    },
+    "links": [
+      {
+        "type": "product-page",
+        "link": "https://www.oneplus.com/global/8-pro"
+      }
+    ],
+    "name": "OnePlus 8 Pro",
+    "type": "Smartphone"
+  },
+  {
+    "name": "Samsung Galaxy Note20 Ultra 5G",
+    "code": "N986B",
+    "type": "Smartphone",
+    "brand": "Samsung",
+    "links": [
+      {
+        "type": "product-page",
+        "link": "https://www.samsung.com/global/galaxy/galaxy-note20/"
+      }
+    ],
+    "details": {
+      "Chipset": "Exynos 990",
+      "OS": "Android 10",
+      "display": "6.9 inch Dynamic AMOLED",
+      "memory": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM",
+      "releaseDate": "Auguest 2020",
+      "resolution": "1440 x 3088"
+    }
+  },
+  {
+    "name": "Apple iPhone 11 Pro Max (Global)",
+    "code": "A2218",
+    "type": "Smartphone",
+    "brand": "Apple",
+    "links": [
+      {
+        "type": "product-page",
+        "link": "https://www.apple.com/iphone-11-pro/specs/"
+      },
+      {
+        "type": "purchase",
+        "link": "https://www.apple.com/shop/buy-iphone/iphone-11-pro"
+      }
+    ],
+    "details": {
+      "Chipset": "Apple A13 Bionic",
+      "OS": "iOS 13, upgradable to iOS 13.6.1",
+      "display": "6.5 inch Super Retina XDR OLED",
+      "memory": "64GB 4GB RAM, 256GB 4GB RAM, 512GB 4GB RAM",
+      "releaseDate": "September 2019",
+      "resolution": "1242 x 2688"
+    }
+  },
+  {
+    "name": "Apple MacBook Pro (16-inch, 2019)",
+    "code": "MVVJ2HNA",
+    "type": "Laptop",
+    "brand": "Apple",
+    "links": [
+      {
+        "type": "product-page",
+        "link": "https://www.apple.com/macbook-pro-16/"
+      },
+      {
+        "type": "specifications",
+        "link": "https://support.apple.com/kb/SP809"
+      }
+    ],
+    "details": {
+      "cpu": "2.6GHz 6‑core Intel Core i7 or 2.3GHz 8‑core Intel Core i9",
+      "os": "macOS",
+      "display": "16 inch LED IPS Retina with Wide color(P3) and True Tone technology",
+      "displayBrightness": "500 nits",
+      "keyboard": "Backlit Magic Keyboard with Touch Bar,Touch ID sensor and Ambient light sensor",
+      "trackpad": "Force Touch trackpad",
+      "webcam": "720p FaceTime HD camera",
+      "ports": "Four Thunderbolt 3 (USB-C)",
+      "storage": "512GB SSD or 1 TB SSD (Configurable to 2TB, 4TB, or 8TB SSD)",
+      "memory": "16GB of 2666MHz DDR4 onboard memory (Configurable to 32GB or 64GB)",
+      "releaseDate": "September 2019",
+      "resolution": "3072 x 1920"
+    }
+  }
+]
