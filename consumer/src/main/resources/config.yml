@@ -4,7 +4,7 @@ kafka:
   topic: electronics
   username: user
   password: MAvRoJKdU8nT
-  checkpointLocation: /tmp/kafka/checkpoint
+  checkpointLocation: /tmp/kafka/consumer/checkpoint
 cassandra:
   host: 192.168.0.151
   port: 9042
