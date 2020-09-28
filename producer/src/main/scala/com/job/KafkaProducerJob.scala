@@ -5,10 +5,14 @@ import java.util.UUID
 
 import com.configuration.{Configuration, SparkConfiguration}
 import com.model.{Electronics, Schema}
-import org.apache.spark.sql.functions.{lit, struct, to_json}
+import org.apache.spark.sql.expressions.UserDefinedFunction
+import org.apache.spark.sql.functions.{struct, to_json, udf}
 import org.apache.spark.sql.{DataFrame, DataFrameReader, SparkSession}
 
 class KafkaProducerJob(configuration: SparkConfiguration) extends ProducerJob(configuration: SparkConfiguration) {
+  private val uuid: UserDefinedFunction = udf(() => UUID.randomUUID().toString)
+  private val updateDate: UserDefinedFunction = udf(() => Instant.now.toEpochMilli)
+
   override protected def schema: Schema = new Electronics
 
   override protected def createDataFrame(dataFrameReader: DataFrameReader): DataFrame = {
@@ -16,8 +20,8 @@ class KafkaProducerJob(configuration: SparkConfiguration) extends ProducerJob(co
       .option("multiLine", value = true)
       .json(configuration.dataSource)
       .drop("id", "lastupdatedon")
-      .withColumn("lastupdatedon", lit(Instant.now.toEpochMilli))
-      .withColumn("id", lit(UUID.randomUUID.toString))
+      .withColumn("lastupdatedon", updateDate())
+      .withColumn("id", uuid())
   }
 
   override protected def write(df: DataFrame): Unit = {
