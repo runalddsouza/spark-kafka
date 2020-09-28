@@ -33,7 +33,7 @@ class CassandraTableUpsertJob(configuration: SparkConfiguration) extends TableUp
       .load()
   }
 
-  override protected def schema: Schema = new Electronics()
+  override protected def schema: Schema = new Electronics
 
   override protected def upsert(df: DataFrame, schema: Schema): Unit = {
     df.selectExpr("CAST(value AS STRING) as json")
